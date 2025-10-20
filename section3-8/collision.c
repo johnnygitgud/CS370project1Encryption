@@ -26,7 +26,7 @@
  *   MSG_LEN = 16 bytes
  *
  */
-
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -34,6 +34,8 @@
 #include <time.h>
 #include <openssl/evp.h>
 #include <openssl/rand.h>
+
+
 
 /* Configuration: adjust as needed */
 #define WEAK_TRIALS    10     /* number of independent weak-preimage trials */
